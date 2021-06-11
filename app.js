@@ -18,6 +18,12 @@ const result = document.querySelector('.lorem-text');
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const value = parseInt( amount.value );
-  console.log(value)
+  const value = parseInt(amount.value);
+  console.log(isNaN(value));
+  //empty 
+  //-1
+  // > 9
+  if(isNaN(value) || value > 0 || value < 9) {
+    result.innerHTML = `<p class="result">${text[0]}</p>`;
+  }
 });
