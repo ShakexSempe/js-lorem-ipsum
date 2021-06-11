@@ -23,12 +23,16 @@ form.addEventListener('submit', (e) => {
   //empty 
   //-1
   // > 9
-  if(isNaN(value) || value < 0 || value > 9) {
+  if(isNaN(value) || value <= 0 || value > 9) {
     result.innerHTML = `<p class="result">${text[random]}</p>`;
     console.log(random)
   }
   else {
     let tempText = text.slice(0, value);
+    tempText = tempText.map((item) => {
+      return `<p class="result">${item}</p>`;
+    }).join("");
+    result.innerHTML = tempText;
     console.log(tempText);
   }
 });
