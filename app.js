@@ -27,4 +27,8 @@ form.addEventListener('submit', (e) => {
     result.innerHTML = `<p class="result">${text[random]}</p>`;
     console.log(random)
   }
+  else {
+    let tempText = text.slice(0, value);
+    console.log(tempText);
+  }
 });

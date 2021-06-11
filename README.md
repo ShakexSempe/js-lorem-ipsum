@@ -9,8 +9,12 @@ Vanilla Javascript tutorial project #14 presented by John Smilga
 -prevent the default submit behaviour of submitting to a server by adding preventDefualt();
 - value constant is the value (e) of the input for 'amount' label;
 - value returned from input as string so we use parseInterger() to convert value from string to a number (number appears in blue and not black in the console);
+
 ### if statement 
 - empty value; number less than 0; more than 9
 - if(user enters the 3 values mentioned above) {display 1 paragraph using template literal};
-- to generate random value from text array: Math.floor(Math.random()* length of text array);
--
+    - to generate random value from text array: Math.floor(Math.random()* length of text array);
+- else{if user enters correct values (ie. index 1-9)};
+    -temporary array: text.slice(0, value) = set beginning and the end of a new array;
+    - new array is = slice(0, value(value is the input saved in a variable from above));
+    -  
