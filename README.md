@@ -17,4 +17,5 @@ Vanilla Javascript tutorial project #14 presented by John Smilga
 - else{if user enters correct values (ie. index 1-9)};
     -temporary array: text.slice(0, value) = set beginning and the end of a new array;
     - new array is = slice(0, value(value is the input saved in a variable from above));
-    -  
+    - map() applied to tempText array from which the value entered by user is wrapped and displayed in a <p> via template literal. Join("") used to wrape each paragraph in its own p tag when returned in map();
+       
