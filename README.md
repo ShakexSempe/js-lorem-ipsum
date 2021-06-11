@@ -11,5 +11,6 @@ Vanilla Javascript tutorial project #14 presented by John Smilga
 - value returned from input as string so we use parseInterger() to convert value from string to a number (number appears in blue and not black in the console);
 ### if statement 
 - empty value; number less than 0; more than 9
-- if statement to display 1 paragraph using template literal, if user enters the 3 values mentioned above.
-- 
+- if(user enters the 3 values mentioned above) {display 1 paragraph using template literal};
+- to generate random value from text array: Math.floor(Math.random()* length of text array);
+-
